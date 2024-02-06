@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cci0tci8norla"]
+
+[ext_resource type="Script" path="res://script/test/responsive_ui/TestUiController.cs" id="1_nwmg2"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_label1", "_label2", "_label3")]
+script = ExtResource("1_nwmg2")
+_label1 = NodePath("Label")
+_label2 = NodePath("Label2")
+_label3 = NodePath("Label3")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Test"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 189.0
+offset_top = 2.0
+offset_right = 230.0
+offset_bottom = 33.0
+text = "Test2"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 166.0
+offset_top = 88.0
+offset_right = 206.0
+offset_bottom = 111.0
+text = "Test"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 352.0
+offset_top = 94.0
+offset_right = 392.0
+offset_bottom = 117.0
+text = "Test2"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 549.0
+offset_top = 94.0
+offset_right = 591.0
+offset_bottom = 117.0
+text = "Test3"
+
+[connection signal="pressed" from="Button" to="." method="TestMethod"]
+[connection signal="pressed" from="Button2" to="." method="TestMethod2"]

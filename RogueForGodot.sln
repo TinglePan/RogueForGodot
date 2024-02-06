@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueForGodot", "RogueForGodot.csproj", "{D55F7272-93F3-4011-9462-247D32C5567D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D55F7272-93F3-4011-9462-247D32C5567D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55F7272-93F3-4011-9462-247D32C5567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55F7272-93F3-4011-9462-247D32C5567D}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{D55F7272-93F3-4011-9462-247D32C5567D}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{D55F7272-93F3-4011-9462-247D32C5567D}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{D55F7272-93F3-4011-9462-247D32C5567D}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
