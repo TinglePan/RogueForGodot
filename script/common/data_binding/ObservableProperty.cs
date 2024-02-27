@@ -2,18 +2,18 @@
 
 namespace RogueForGodot.common.data_binding;
 
-public class ObservedProperty<T>: IObservedProperty<T>
+public class ObservableProperty<T>: IObservableProperty<T>
 {
     private T _value;
     
-    public ObservedProperty(string name, T initialValue)
+    public ObservableProperty(string name, T initialValue)
     {
         Name = name;
         _value = initialValue;
     }
     
-    public event EventHandler<ValueChangedEventArgs> ValueChanged;
-    public event EventHandler<ValueChangedEventDetailedArgs<T>> DetailedValueChanged;
+    public event EventHandler<ValueChangedEventArgs> ValueChanged = delegate { };
+    public event EventHandler<ValueChangedEventDetailedArgs<T>> DetailedValueChanged = delegate { };
 
     public string Name { get; }
 

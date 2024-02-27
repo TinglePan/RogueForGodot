@@ -2,12 +2,12 @@ using System;
 
 namespace RogueForGodot.common.data_binding;
 
-public class DerivedObservedProperty<T> : IObservedProperty<T>, INotifyValueChanged<Lazy<T>>
+public class DerivedObservableProperty<T> : IObservableProperty<T>, INotifyValueChanged<Lazy<T>>
 {
     private Lazy<T> _value;
     private readonly Func<T> _valueGetter;
     
-    public DerivedObservedProperty(
+    public DerivedObservableProperty(
         string derivedPropertyName, Func<T> valueGetter,
         params INotifyValueChanged[] valueChangesToObserve)
     {

@@ -1,5 +1,11 @@
 ﻿namespace RogueForGodot.common.data_binding;
 
+public interface IObservableProperty<out T>: INotifyValueChanged
+{
+    public string Name { get; }
+    public T Value { get; }
+}
+
 public struct ValueChangedEventArgs
 {
     public string PropertyName;
